@@ -1,361 +1,475 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mariane Nicole Carreon | Portfolio</title>
-    <link rel="stylesheet" href="mariane.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mariane | Personal Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Trebuchet MS", sans-serif;
+    color: #542747;
+    background: linear-gradient(135deg, #fff0f7, #f7e8ff, #ffe1ef);
+    min-height: 100vh;
+}
+
+header {
+    background: rgba(255,255,255,0.85);
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    box-shadow: 0 3px 15px #d8a7c455;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #c04485;
+}
+
+nav {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #703b65;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #d63384;
+}
+
+section {
+    padding: 55px 8%;
+}
+
+.hero {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    color: #c04485;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: auto;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 22px;
+    padding: 12px 24px;
+    background: #d85b9c;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #a83273;
+    transform: translateY(-3px);
+}
+
+.section-title {
+    text-align: center;
+    color: #c04485;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: rgba(255,255,255,0.8);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 18px #b77da533;
+    margin-bottom: 22px;
+    border: 1px solid #f5c9e3;
+}
+
+.card h3 {
+    color: #b83e82;
+    margin-bottom: 12px;
+}
+
+.card p, .card li {
+    line-height: 1.8;
+}
+
+.info-grid, .skills-grid, .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+}
+
+.info-item {
+    background: #fff4fa;
+    padding: 15px;
+    border-radius: 12px;
+    overflow-wrap: anywhere;
+}
+
+.info-item strong {
+    color: #b83e82;
+}
+
+.skills-grid div {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px #b77da522;
+}
+
+.project-card {
+    background: rgba(255,255,255,0.9);
+    padding: 22px;
+    border-radius: 18px;
+    border: 1px solid #f1c5df;
+    box-shadow: 0 5px 15px #b77da522;
+    min-width: 0;
+}
+
+.project-card h3 {
+    color: #b83e82;
+    margin-bottom: 12px;
+}
+
+.project-card .btn {
+    margin: 12px 6px 0 0;
+    padding: 10px 15px;
+}
+
+.project-content {
+    display: none;
+    margin-top: 18px;
+    padding: 15px;
+    background: #fff2f9;
+    border-radius: 12px;
+    overflow-wrap: anywhere;
+}
+
+.project-content.show {
+    display: block;
+}
+
+.project-content pre {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    max-width: 100%;
+}
+
+.project-content code {
+    font-size: 13px;
+}
+
+.lan-diagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 0;
+}
+
+.device {
+    background: white;
+    border: 2px solid #d85b9c;
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+    width: min(100%, 220px);
+}
+
+.connection {
+    width: 3px;
+    height: 25px;
+    background: #d85b9c;
+}
+
+footer {
+    text-align: center;
+    background: #f8d9eb;
+    padding: 22px;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+    header {
+        justify-content: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    section {
+        padding: 40px 6%;
+    }
+}
+</style>
 </head>
+
 <body>
 
-    <div class="floating-hearts" aria-hidden="true">
-        <span>♡</span><span>♡</span><span>✦</span>
-        <span>♡</span><span>✧</span><span>♡</span><span>✦</span>
+<header>
+    <div class="logo">Mariane's Portfolio ♡</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div>
+        <h1>Hello, I'm Mariane!</h1>
+        <p>
+            A first-year Bachelor of Science in Information Technology
+            student who is passionate about technology, programming,
+            and web development.
+        </p>
+        <a href="#projects" class="btn">Explore My Projects</a>
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About Me ♡</h2>
+
+    <div class="card">
+        <h3>Who I Am</h3>
+        <p>
+            I am a first-year BSIT student at the University of Eastern
+            Pangasinan. I am still learning and improving my skills in
+            programming and web design. I want to gain more knowledge
+            and become a successful IT professional in the future.
+        </p>
     </div>
 
-    <header>
-        <nav class="navbar">
-            <a href="#home" class="logo">Mariane<span>.</span></a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="card">
+        <h3>Personal Information</h3>
+        <div class="info-grid">
+            <div class="info-item"><strong>Full Name:</strong> Mariane Nicole P. Carreon</div>
+            <div class="info-item"><strong>Course:</strong> BS Information Technology</div>
+            <div class="info-item"><strong>Year Level:</strong> First Year</div>
+            <div class="info-item"><strong>School:</strong> University of Eastern Pangasinan</div>
+            <div class="info-item"><strong>Hobbies:</strong> Cooking, Basketball, Photography</div>
+            <div class="info-item"><strong>Goal:</strong> To become a reliable IT professional</div>
+        </div>
+    </div>
+</section>
 
-    <!-- HOME -->
-    <section id="home" class="hero">
-        <div class="hero-content reveal">
-            <p class="hello">✨ Hello, I'm</p>
-            <h1>Mariane Nicole <span>Carreon</span></h1>
-            <h2><span class="typing">1st Year BSIT Student</span></h2>
-            <p class="hero-description">
-                I am a college student interested in technology,
-                programming, and web design. I want to improve my
-                knowledge and develop new skills in Information Technology.
+<section id="skills">
+    <h2 class="section-title">My Skills</h2>
+
+    <div class="skills-grid">
+        <div>HTML</div>
+        <div>CSS</div>
+        <div>Basic Programming</div>
+        <div>Problem Solving</div>
+        <div>Communication</div>
+        <div>Teamwork</div>
+    </div>
+</section>
+
+<section id="education">
+    <h2 class="section-title">Education</h2>
+
+    <div class="card">
+        <h3>College</h3>
+        <p>University of Eastern Pangasinan</p>
+        <p>Bachelor of Science in Information Technology</p>
+        <p>First Year</p>
+    </div>
+
+    <div class="card">
+        <h3>Secondary Education</h3>
+        <p>Lumayao Integrated School</p>
+    </div>
+
+    <div class="card">
+        <h3>Elementary Education</h3>
+        <p>Mantacdang Elementary School</p>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">My Projects ♡</h2>
+
+    <div class="projects-grid">
+
+        <!-- PROJECT 1 -->
+        <div class="project-card">
+            <h3>1. Personal Portfolio Website</h3>
+            <p>
+                A personal website that introduces me, my skills,
+                educational background, and goals as an IT student.
             </p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn primary-btn">💻 View My Projects</a>
-                <a href="#contact" class="btn secondary-btn">💌 Contact Me</a>
-            </div>
-        </div>
 
-        <div class="hero-image reveal">
-            <div class="image-container">
-                <div class="image-glow"></div>
-                <img src="mariane.jfif" alt="Mariane Nicole Carreon">
-            </div>
-            <span class="sparkle sparkle-one">✦</span>
-            <span class="sparkle sparkle-two">✧</span>
-            <span class="sparkle sparkle-three">♡</span>
-            <span class="sparkle sparkle-four">✦</span>
-        </div>
-    </section>
+            <button class="btn" onclick="toggleProject('details1', this)">
+                View Details
+            </button>
 
-    <!-- ABOUT -->
-    <section id="about" class="section">
-        <div class="section-title reveal">
-            <p>Get To Know Me ✨</p>
-            <h2>About Me</h2>
-        </div>
-
-        <div class="about-content">
-            <div class="about-text reveal">
-                <h3>Hi, I'm Mariane! 💗</h3>
+            <div id="details1" class="project-content">
+                <p><strong>Project Description:</strong></p>
                 <p>
-                    I am a first-year Bachelor of Science in Information
-                    Technology student at the University of Eastern Pangasinan.
+                    This website was created using HTML and CSS.
+                    HTML organizes the content, while CSS controls
+                    the design, colors, spacing, and layout.
                 </p>
+                <p><strong>Purpose:</strong> To introduce myself and
+                    showcase my learning progress as an IT student.</p>
+            </div>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project-card">
+            <h3>2. LAN Network Diagram</h3>
+            <p>
+                A simple Local Area Network diagram showing how
+                computers and other devices can connect through a switch.
+            </p>
+
+            <button class="btn" onclick="toggleProject('diagram1', this)">
+                View Diagram
+            </button>
+
+            <div id="diagram1" class="project-content">
+                <p><strong>LAN Network Diagram</strong></p>
+
+                <div class="lan-diagram">
+                    <div class="device">Server</div>
+                    <div class="connection"></div>
+                    <div class="device">Switch</div>
+                    <div class="connection"></div>
+                    <div class="device">Desktop Computer</div>
+                    <div class="connection"></div>
+                    <div class="device">Laptop</div>
+                    <div class="connection"></div>
+                    <div class="device">Network Printer</div>
+                </div>
+
                 <p>
-                    I am still learning programming, networking, and web
-                    development. I enjoy discovering new things and improving
-                    my skills through school activities and projects.
-                </p>
-                <p>
-                    During my free time, I enjoy <strong>cooking</strong>,
-                    <strong>playing basketball</strong>, and
-                    <strong>photography</strong>. My goal is to become a
-                    reliable IT professional in the future.
+                    <strong>Explanation:</strong> In a LAN, devices in
+                    the same local network can communicate and share
+                    resources. A switch connects the devices. This is
+                    a simple illustration, not a complete network plan.
                 </p>
             </div>
-
-            <div class="personal-information reveal">
-                <h3 class="personal-title">💗 Personal Details</h3>
-                <div class="personal-grid">
-                    <div class="info-box"><span>🎂</span><div><h3>Age</h3><p>18 years old</p></div></div>
-                    <div class="info-box"><span>👤</span><div><h3>Sex</h3><p>Male</p></div></div>
-                    <div class="info-box"><span>🇵🇭</span><div><h3>Nationality</h3><p>Filipino</p></div></div>
-                    <div class="info-box"><span>🙏</span><div><h3>Religion</h3><p>Iglesia Ni Cristo</p></div></div>
-                    <div class="info-box"><span>💗</span><div><h3>Status</h3><p>Single</p></div></div>
-                    <div class="info-box"><span>📍</span><div><h3>Address</h3><p>San Quintin, Pangasinan</p></div></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills" class="section">
-        <div class="section-title reveal">
-            <p>Things I Enjoy and Learn ✨</p>
-            <h2>My Skills</h2>
         </div>
 
-        <div class="skills-container">
-            <div class="skill-card reveal"><div class="skill-icon">💻</div><h3>HTML</h3><p>Learning to build the structure of webpages.</p></div>
-            <div class="skill-card reveal"><div class="skill-icon">🎨</div><h3>CSS</h3><p>Styling webpages with colors and layouts.</p></div>
-            <div class="skill-card reveal"><div class="skill-icon">🌐</div><h3>Networking</h3><p>Learning the basics of computer networks and LAN connections.</p></div>
-            <div class="skill-card reveal"><div class="skill-icon">🍳</div><h3>Cooking</h3><p>Preparing food and trying different recipes.</p></div>
-            <div class="skill-card reveal"><div class="skill-icon">🏀</div><h3>Basketball</h3><p>Enjoying sports and learning teamwork.</p></div>
-            <div class="skill-card reveal"><div class="skill-icon">📷</div><h3>Photography</h3><p>Capturing special moments and memories.</p></div>
-        </div>
-    </section>
+        <!-- PROJECT 3 -->
+        <div class="project-card">
+            <h3>3. HTML and CSS Page</h3>
+            <p>
+                A basic webpage created to practice HTML structure
+                and CSS styling.
+            </p>
 
-    <!-- EDUCATION -->
-    <section id="education" class="section">
-        <div class="section-title reveal">
-            <p>My Academic Journey 🎓</p>
-            <h2>Education</h2>
-        </div>
+            <button class="btn" onclick="toggleProject('code1', this)">
+                View Sample Code
+            </button>
 
-        <div class="education-container">
-            <div class="education-card reveal">
-                <span class="education-icon">🎓</span>
-                <h3>College</h3>
-                <h4>UNIVERSITY OF EASTERN PANGASINAN</h4>
-                <p><strong>Year:</strong> 1st Year College, 2026–Present</p>
-                <p>Bachelor of Science in Information Technology</p>
-            </div>
-
-            <div class="education-card reveal">
-                <span class="education-icon">🏫</span>
-                <h3>Senior High School</h3>
-                <h4>LUMAYAO INTEGRATED SCHOOL</h4>
-                <p><strong>Completed:</strong> 2024–2025</p>
-                <p>Science, Technology, Engineering, and Mathematics (STEM)</p>
-            </div>
-
-            <div class="education-card reveal">
-                <span class="education-icon">🏫</span>
-                <h3>Junior High School</h3>
-                <h4>LUMAYAO INTEGRATED SCHOOL</h4>
-                <p><strong>Completed:</strong> 2020–2024</p>
-                <p>San Quintin, Pangasinan</p>
-            </div>
-
-            <div class="education-card reveal">
-                <span class="education-icon">📚</span>
-                <h3>Elementary Education</h3>
-                <h4>MANTACDANG ELEMENTARY SCHOOL</h4>
-                <p><strong>Completed:</strong> 2019–2020</p>
-                <p>Sta. Maria, Pangasinan</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-        <div class="section-title reveal">
-            <p>My School Works and Practice 💻</p>
-            <h2>My Projects</h2>
-        </div>
-
-        <div class="projects-container">
-
-            <!-- PROJECT 1 -->
-            <article class="project-card reveal">
-                <div class="project-icon">🌸</div>
-                <p class="project-number">PROJECT 01</p>
-                <h3>Personal Portfolio Website</h3>
-                <p>
-                    A personal website that introduces me, my skills,
-                    education, interests, and goals as a BSIT student.
-                    It uses HTML to organize the content and CSS to style
-                    the webpage.
-                </p>
-                <div class="project-tags">
-                    <span>HTML</span><span>CSS</span><span>Web Design</span>
-                </div>
-                <button class="project-btn" onclick="toggleDetails('project-one', this)">
-                    View Details
-                </button>
-                <div class="project-details" id="project-one">
-                    <p><strong>Purpose:</strong> To practice creating a personal webpage.</p>
-                    <p><strong>Features:</strong> About Me, Skills, Education, Projects, and Contact sections.</p>
-                </div>
-            </article>
-
-            <!-- PROJECT 2 -->
-            <article class="project-card reveal">
-                <div class="project-icon">🌐</div>
-                <p class="project-number">PROJECT 02</p>
-                <h3>LAN Network Diagram</h3>
-                <p>
-                    A diagram showing how computers, a printer, and a server
-                    connect through a network switch in a Local Area Network.
-                    It helps explain how devices communicate within an office.
-                </p>
-                <div class="project-tags">
-                    <span>Networking</span><span>LAN</span><span>Topology</span>
-                </div>
-                <button class="project-btn" onclick="toggleDetails('project-two', this)">
-                    View Diagram
-                </button>
-                <div class="project-details" id="project-two">
-                    <div class="lan-diagram">
-                        <div class="lan-device">💻<small>Computer 1</small></div>
-                        <div class="lan-device">🖥️<small>Computer 2</small></div>
-                        <div class="lan-device">🖨️<small>Printer</small></div>
-                        <div class="lan-device">🗄️<small>Server</small></div>
-                        <div class="lan-lines">↘　↓　↓　↙</div>
-                        <div class="lan-switch">🔀 Network Switch</div>
-                        <p class="diagram-caption">
-                            Devices connect to the switch using Ethernet cables.
-                        </p>
-                    </div>
-                    <p><strong>Purpose:</strong> To understand how wired devices connect in a LAN.</p>
-                </div>
-            </article>
-
-            <!-- PROJECT 3 -->
-            <article class="project-card reveal">
-                <div class="project-icon">🎨</div>
-                <p class="project-number">PROJECT 03</p>
-                <h3>HTML and CSS Page</h3>
-                <p>
-                    A simple webpage created with HTML elements and CSS
-                    styles. It demonstrates headings, paragraphs, buttons,
-                    colors, spacing, and page layout.
-                </p>
-                <div class="project-tags">
-                    <span>HTML</span><span>CSS</span><span>Layout</span>
-                </div>
-                <button class="project-btn" onclick="toggleDetails('project-three', this)">
-                    View Sample Code
-                </button>
-                <div class="project-details" id="project-three">
-                    <pre><code>&lt;!DOCTYPE html&gt;
+            <div id="code1" class="project-content">
+                <p><strong>HTML Sample:</strong></p>
+                <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
     &lt;title&gt;My Webpage&lt;/title&gt;
-    &lt;link rel="stylesheet" href="style.css"&gt;
 &lt;/head&gt;
 &lt;body&gt;
     &lt;h1&gt;Welcome to My Page&lt;/h1&gt;
-    &lt;p&gt;I am learning HTML and CSS.&lt;/p&gt;
-    &lt;button&gt;Learn More&lt;/button&gt;
+    &lt;p&gt;This is my first webpage.&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-                    <p><strong>Purpose:</strong> To practice HTML structure and CSS styling.</p>
-                </div>
-            </article>
-        </div>
-    </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section contact-section">
-        <div class="section-title reveal">
-            <p>LET'S CONNECT ✨</p>
-            <h2>Contact Me</h2>
-        </div>
+                <p><strong>CSS Sample:</strong></p>
+                <pre><code>body {
+    background-color: #fff0f7;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
 
-        <div class="contact-container">
-            <div class="contact-details reveal">
-                <div class="contact-box"><div class="contact-icon">📧</div><div><h3>Email</h3><p>carreonpaulperpus@gmail.com</p></div></div>
-                <div class="contact-box"><div class="contact-icon">📞</div><div><h3>Phone</h3><p>09919322186</p></div></div>
-                <div class="contact-box"><div class="contact-icon">📍</div><div><h3>Location</h3><p>San Quintin, Pangasinan</p></div></div>
+h1 {
+    color: #c04485;
+}</code></pre>
             </div>
-
-            <form class="contact-form" onsubmit="event.preventDefault(); alert('This is a demo form. Messages are not sent yet.');">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="6" required></textarea>
-                <button type="submit">💌 Send Message</button>
-            </form>
         </div>
-    </section>
 
-    <footer>
-        <p>Made with 💗 by <strong>Mariane Nicole Carreon</strong></p>
-        <p>First-Year BSIT Student | Learning and Growing</p>
-    </footer>
+    </div>
+</section>
 
-    <a href="#home" class="back-top" aria-label="Back to top">↑</a>
+<section id="contact">
+    <h2 class="section-title">Contact Me</h2>
 
-    <script>
-        // Scroll reveal animation
-        const reveals = document.querySelectorAll(".reveal");
+    <div class="card">
+        <p>
+            Thank you for visiting my portfolio! I am always willing
+            to learn new things and improve my skills.
+        </p>
+        <p style="margin-top: 12px;">
+            Feel free to connect with me through my school or
+            preferred contact platform.
+        </p>
+    </div>
+</section>
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("active");
-                }
-            });
-        }, { threshold: 0.12 });
+<footer>
+    <p>© 2026 Mariane's Portfolio | Made with ♡</p>
+</footer>
 
-        reveals.forEach((element) => observer.observe(element));
+<script>
+function toggleProject(id, button) {
+    const content = document.getElementById(id);
 
-        // Typing effect
-        const words = [
-            "1st Year BSIT Student",
-            "Future IT Professional",
-            "Web Development Learner",
-            "Technology Enthusiast"
-        ];
+    if (!content) return;
 
-        let wordIndex = 0;
-        let charIndex = 0;
-        let deleting = false;
-        const typing = document.querySelector(".typing");
+    content.classList.toggle("show");
 
-        function typeEffect() {
-            const currentWord = words[wordIndex];
+    const isVisible = content.classList.contains("show");
 
-            if (!deleting) {
-                typing.textContent = currentWord.substring(0, charIndex + 1);
-                charIndex++;
-
-                if (charIndex === currentWord.length) {
-                    deleting = true;
-                    setTimeout(typeEffect, 1500);
-                    return;
-                }
-            } else {
-                typing.textContent = currentWord.substring(0, charIndex - 1);
-                charIndex--;
-
-                if (charIndex === 0) {
-                    deleting = false;
-                    wordIndex = (wordIndex + 1) % words.length;
-                }
-            }
-
-            setTimeout(typeEffect, deleting ? 50 : 100);
-        }
-
-        typeEffect();
-
-        // Project details buttons
-        function toggleDetails(id, button) {
-            const details = document.getElementById(id);
-            const isOpen = details.classList.toggle("show");
-            button.textContent = isOpen
-                ? "Hide Details"
-                : (id === "project-two" ? "View Diagram" :
-                   id === "project-three" ? "View Sample Code" : "View Details");
-        }
-
-        // Navbar scroll effect
-        window.addEventListener("scroll", () => {
-            document.querySelector("header").classList.toggle(
-                "scrolled", window.scrollY > 50
-            );
-        });
-    </script>
+    if (id === "details1") {
+        button.textContent = isVisible ? "Hide Details" : "View Details";
+    } else if (id === "diagram1") {
+        button.textContent = isVisible ? "Hide Diagram" : "View Diagram";
+    } else if (id === "code1") {
+        button.textContent = isVisible ? "Hide Sample Code" : "View Sample Code";
+    }
+}
+</script>
 
 </body>
 </html>

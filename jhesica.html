@@ -379,64 +379,163 @@
 
     <!-- PROJECTS SECTION -->
 <section id="projects" class="projects-section">
+
     <div class="projects-heading">
         <p class="section-subtitle">MY WORK</p>
         <h2>My Projects</h2>
-        <p>Here are some of the projects I have worked on.</p>
+        <p>Here are some of my school activities and website projects.</p>
     </div>
 
     <div class="projects-container">
 
+        <!-- PROJECT 1: PERSONAL PORTFOLIO -->
         <div class="project-card">
-            <div class="project-icon">💻</div>
+            <div class="project-icon">👤</div>
             <span class="project-number">PROJECT 01</span>
-            <h3>Personal Portfolio</h3>
+
+            <h3>Personal Portfolio Website</h3>
+
             <p>
-                A personal website that introduces my
-                background, skills, education, and goals.
+                A personal website that introduces myself,
+                my skills, educational background, and goals
+                as a first-year BSIT student.
             </p>
+
             <div class="project-tags">
                 <span>HTML</span>
                 <span>CSS</span>
             </div>
+
+            <button class="project-btn"
+                onclick="document.getElementById('personal-code').hidden = !document.getElementById('personal-code').hidden">
+                View Code
+            </button>
+
+            <pre id="personal-code" class="code-box" hidden><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport"
+          content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;My Personal Portfolio&lt;/title&gt;
+    &lt;link rel="stylesheet" href="personal.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Hello, I'm Jewel&lt;/h1&gt;
+        &lt;p&gt;First-Year BSIT Student&lt;/p&gt;
+    &lt;/header&gt;
+
+    &lt;section&gt;
+        &lt;h2&gt;About Me&lt;/h2&gt;
+        &lt;p&gt;I am an IT student learning programming
+        and web development.&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;section&gt;
+        &lt;h2&gt;My Skills&lt;/h2&gt;
+        &lt;p&gt;HTML, CSS, Basic Programming,
+        Communication, and Teamwork&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;footer&gt;
+        &lt;p&gt;Thank you for visiting my portfolio!&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
         </div>
 
+
+        <!-- PROJECT 2: GROUP PORTFOLIO -->
         <div class="project-card">
             <div class="project-icon">🌐</div>
             <span class="project-number">PROJECT 02</span>
+
             <h3>Group Portfolio Website</h3>
+
             <p>
-                A group website that presents the profiles
-                and information of our team members.
+                A collaborative website that presents our
+                team members, personal information, skills,
+                and interests.
             </p>
+
             <div class="project-tags">
                 <span>HTML</span>
                 <span>CSS</span>
+                <span>Teamwork</span>
             </div>
+
+            <button class="project-btn"
+                onclick="document.getElementById('group-code').hidden = !document.getElementById('group-code').hidden">
+                View Code
+            </button>
+
+            <pre id="group-code" class="code-box" hidden><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport"
+          content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Our Group Portfolio&lt;/title&gt;
+    &lt;link rel="stylesheet" href="group.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Bloomfolio&lt;/h1&gt;
+        &lt;p&gt;Four Minds, One Digital Journey&lt;/p&gt;
+    &lt;/header&gt;
+
+    &lt;section&gt;
+        &lt;h2&gt;Our Team&lt;/h2&gt;
+
+        &lt;div class="members"&gt;
+            &lt;div class="member"&gt;Jhesica&lt;/div&gt;
+            &lt;div class="member"&gt;Mariane&lt;/div&gt;
+            &lt;div class="member"&gt;Angel&lt;/div&gt;
+            &lt;div class="member"&gt;Jewel&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;footer&gt;
+        &lt;p&gt;Created by our team&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+            <a class="project-btn"
+               href="https://sisonjhesicamae.github.io/Bloomfolio-Group-Portfolio/"
+               target="_blank"
+               rel="noopener noreferrer">
+                View Website
+            </a>
         </div>
 
+
+        <!-- PROJECT 3: BASIC PROGRAMMING -->
         <div class="project-card">
-    <div class="project-icon">💻</div>
-    <span class="project-number">PROJECT 01</span>
+            <div class="project-icon">💻</div>
+            <span class="project-number">PROJECT 03</span>
 
-    <h3>Basic Programming Activity</h3>
+            <h3>Basic Programming Activity</h3>
 
-    <p>
-        A beginner Java program that accepts two numbers
-        and displays their sum.
-    </p>
+            <p>
+                A simple Java program that accepts two
+                numbers and calculates their sum using
+                variables, Scanner, and arithmetic operators.
+            </p>
 
-    <div class="project-tags">
-        <span>Java</span>
-        <span>Programming</span>
-    </div>
+            <div class="project-tags">
+                <span>Java</span>
+                <span>Scanner</span>
+                <span>Variables</span>
+            </div>
 
-    <button class="view-code-btn"
-        onclick="document.getElementById('java-code').hidden = !document.getElementById('java-code').hidden">
-        View Code
-    </button>
+            <button class="project-btn"
+                onclick="document.getElementById('program-code').hidden = !document.getElementById('program-code').hidden">
+                View Code
+            </button>
 
-    <pre id="java-code" hidden><code>import java.util.Scanner;
+            <pre id="program-code" class="code-box" hidden><code>import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -455,7 +554,6 @@ public class Main {
         input.close();
     }
 }</code></pre>
-</div>
         </div>
 
     </div>

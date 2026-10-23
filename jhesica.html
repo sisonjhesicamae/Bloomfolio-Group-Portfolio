@@ -416,17 +416,46 @@
         </div>
 
         <div class="project-card">
-            <div class="project-icon">🖥️</div>
-            <span class="project-number">PROJECT 03</span>
-            <h3>HTML and CSS Activity</h3>
-            <p>
-                A school activity where I practice creating
-                webpage layouts and applying CSS styles.
-            </p>
-            <div class="project-tags">
-                <span>Web Design</span>
-                <span>Practice</span>
-            </div>
+    <div class="project-icon">💻</div>
+    <span class="project-number">PROJECT 01</span>
+
+    <h3>Basic Programming Activity</h3>
+
+    <p>
+        A beginner Java program that accepts two numbers
+        and displays their sum.
+    </p>
+
+    <div class="project-tags">
+        <span>Java</span>
+        <span>Programming</span>
+    </div>
+
+    <button class="view-code-btn"
+        onclick="document.getElementById('java-code').hidden = !document.getElementById('java-code').hidden">
+        View Code
+    </button>
+
+    <pre id="java-code" hidden><code>import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter first number: ");
+        int num1 = input.nextInt();
+
+        System.out.print("Enter second number: ");
+        int num2 = input.nextInt();
+
+        int sum = num1 + num2;
+
+        System.out.println("Sum: " + sum);
+
+        input.close();
+    }
+}</code></pre>
+</div>
         </div>
 
     </div>

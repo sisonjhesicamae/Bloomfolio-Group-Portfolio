@@ -8,235 +8,410 @@
 </head>
 <body>
 
+    <!-- FLOATING HEARTS BACKGROUND -->
     <div class="floating-hearts" aria-hidden="true">
-        <span>♡</span><span>♡</span><span>✦</span>
-        <span>♡</span><span>✧</span><span>♡</span><span>✦</span>
+        <span>♡</span>
+        <span>✦</span>
+        <span>♡</span>
+        <span>✧</span>
+        <span>♡</span>
+        <span>✦</span>
+        <span>♡</span>
     </div>
 
-    <header>
-        <nav class="navbar">
-            <a href="#home" class="logo">Mariane<span>.</span></a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="background-glow"></div>
 
-    <!-- HOME -->
-    <section id="home" class="hero">
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <a href="#home" class="logo">Mariane<span>.</span></a>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="hero section">
         <div class="hero-content reveal">
-            <p class="hello">✨ Hello, I'm</p>
-            <h1>Mariane Nicole <span>Carreon</span></h1>
-            <h2><span class="typing">1st Year BSIT Student</span></h2>
+            <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+
+            <h1>
+                Hello, I'm
+                <span class="gradient-text">
+                    Mariane Nicole Carreon
+                </span>
+            </h1>
+
+            <h2 class="typing-line">
+                I'm a <span id="typing-text">BSIT Student</span>
+            </h2>
+
             <p class="hero-description">
-                I am a college student interested in technology,
-                programming, and web design. I want to improve my
-                knowledge and develop new skills in Information Technology.
+                A first-year Information Technology student who is
+                passionate about learning technology, programming,
+                and web development.
             </p>
+
             <div class="hero-buttons">
-                <a href="#projects" class="btn primary-btn">💻 View My Projects</a>
-                <a href="#contact" class="btn secondary-btn">💌 Contact Me</a>
+                <a href="#education" class="btn primary-btn">
+                    My Education
+                </a>
+
+                <a href="#contact" class="btn secondary-btn">
+                    Contact Me
+                </a>
             </div>
         </div>
 
         <div class="hero-image reveal">
-            <div class="image-container">
-                <div class="image-glow"></div>
-                <img src="mariane.jfif" alt="Mariane Nicole Carreon">
+            <div class="image-circle">
+                <img
+                    src="mariane.jfif"
+                    alt="Photo of Mariane Nicole Carreon"
+                >
             </div>
-            <span class="sparkle sparkle-one">✦</span>
-            <span class="sparkle sparkle-two">✧</span>
-            <span class="sparkle sparkle-three">♡</span>
-            <span class="sparkle sparkle-four">✦</span>
+            <div class="image-decoration decoration-one">♡</div>
+            <div class="image-decoration decoration-two">✦</div>
         </div>
     </section>
 
-    <!-- ABOUT -->
+    <!-- ABOUT SECTION -->
     <section id="about" class="section">
         <div class="section-title reveal">
-            <p>Get To Know Me ✨</p>
+            <p>GET TO KNOW ME</p>
             <h2>About Me</h2>
         </div>
 
-        <div class="about-content">
-            <div class="about-text reveal">
-                <h3>Hi, I'm Mariane! 💗</h3>
+        <div class="about-container reveal">
+            <div class="about-text">
+                <h3>Hello! I'm Mariane 💗</h3>
+
                 <p>
                     I am a first-year Bachelor of Science in Information
-                    Technology student at the University of Eastern Pangasinan.
+                    Technology student at the University of Eastern
+                    Pangasinan. I am still learning and improving my
+                    knowledge about computers, programming, and website
+                    development.
                 </p>
+
                 <p>
-                    I am still learning programming, networking, and web
-                    development. I enjoy discovering new things and improving
-                    my skills through school activities and projects.
+                    During my free time, I enjoy cooking, playing
+                    basketball, and photography. My goal is to become
+                    a reliable IT professional and continue learning
+                    new skills that can help me in the future.
                 </p>
+
                 <p>
-                    During my free time, I enjoy <strong>cooking</strong>,
-                    <strong>playing basketball</strong>, and
-                    <strong>photography</strong>. My goal is to become a
-                    reliable IT professional in the future.
+                    I believe that learning takes time, and every
+                    project gives me a chance to improve my skills
+                    and gain experience.
                 </p>
             </div>
 
-            <div class="personal-information reveal">
-                <h3 class="personal-title">💗 Personal Details</h3>
-                <div class="personal-grid">
-                    <div class="info-box"><span>🎂</span><div><h3>Age</h3><p>18 years old</p></div></div>
-                    <div class="info-box"><span>👤</span><div><h3>Sex</h3><p>Male</p></div></div>
-                    <div class="info-box"><span>🇵🇭</span><div><h3>Nationality</h3><p>Filipino</p></div></div>
-                    <div class="info-box"><span>🙏</span><div><h3>Religion</h3><p>Iglesia Ni Cristo</p></div></div>
-                    <div class="info-box"><span>💗</span><div><h3>Status</h3><p>Single</p></div></div>
-                    <div class="info-box"><span>📍</span><div><h3>Address</h3><p>San Quintin, Pangasinan</p></div></div>
+            <div class="personal-info">
+                <h3>Personal Information</h3>
+
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span>Age</span>
+                        <strong>18 years old</strong>
+                    </div>
+
+                    <div class="info-item">
+                        <span>Sex</span>
+                        <strong>Male</strong>
+                    </div>
+
+                    <div class="info-item">
+                        <span>Nationality</span>
+                        <strong>Filipino</strong>
+                    </div>
+
+                    <div class="info-item">
+                        <span>Religion</span>
+                        <strong>Iglesia Ni Cristo</strong>
+                    </div>
+
+                    <div class="info-item">
+                        <span>Status</span>
+                        <strong>Single</strong>
+                    </div>
+
+                    <div class="info-item">
+                        <span>Address</span>
+                        <strong>San Quintin, Pangasinan</strong>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SKILLS -->
+    <!-- SKILLS SECTION -->
     <section id="skills" class="section">
         <div class="section-title reveal">
-            <p>Things I Enjoy and Learn ✨</p>
+            <p>WHAT I CAN DO</p>
             <h2>My Skills</h2>
         </div>
 
         <div class="skills-container">
-            <div class="skill-card reveal"><div class="skill-icon">💻</div><h3>HTML</h3><p>Learning to build the structure of webpages.</p></div>
-            <div class="skill-card reveal"><div class="skill-icon">🎨</div><h3>CSS</h3><p>Styling webpages with colors and layouts.</p></div>
-            <div class="skill-card reveal"><div class="skill-icon">🌐</div><h3>Networking</h3><p>Learning the basics of computer networks and LAN connections.</p></div>
-            <div class="skill-card reveal"><div class="skill-icon">🍳</div><h3>Cooking</h3><p>Preparing food and trying different recipes.</p></div>
-            <div class="skill-card reveal"><div class="skill-icon">🏀</div><h3>Basketball</h3><p>Enjoying sports and learning teamwork.</p></div>
-            <div class="skill-card reveal"><div class="skill-icon">📷</div><h3>Photography</h3><p>Capturing special moments and memories.</p></div>
+
+            <div class="skill-card reveal">
+                <div class="skill-icon">💻</div>
+                <h3>HTML</h3>
+                <p>Learning to create the structure of webpages.</p>
+            </div>
+
+            <div class="skill-card reveal">
+                <div class="skill-icon">🎨</div>
+                <h3>CSS</h3>
+                <p>Learning to style webpages using colors and layouts.</p>
+            </div>
+
+            <div class="skill-card reveal">
+                <div class="skill-icon">🍳</div>
+                <h3>Cooking</h3>
+                <p>Preparing food and learning different recipes.</p>
+            </div>
+
+            <div class="skill-card reveal">
+                <div class="skill-icon">🏀</div>
+                <h3>Basketball</h3>
+                <p>Enjoying sports and learning teamwork.</p>
+            </div>
+
+            <div class="skill-card reveal">
+                <div class="skill-icon">📸</div>
+                <h3>Photography</h3>
+                <p>Capturing moments and interesting views.</p>
+            </div>
+
+            <div class="skill-card reveal">
+                <div class="skill-icon">🧩</div>
+                <h3>Problem Solving</h3>
+                <p>Practicing how to understand and solve problems.</p>
+            </div>
+
         </div>
     </section>
 
-    <!-- EDUCATION -->
+    <!-- EDUCATION SECTION -->
     <section id="education" class="section">
         <div class="section-title reveal">
-            <p>My Academic Journey 🎓</p>
+            <p>MY LEARNING JOURNEY</p>
             <h2>Education</h2>
         </div>
 
         <div class="education-container">
+
             <div class="education-card reveal">
-                <span class="education-icon">🎓</span>
-                <h3>College</h3>
-                <h4>UNIVERSITY OF EASTERN PANGASINAN</h4>
-                <p><strong>Year:</strong> 1st Year College, 2026–Present</p>
-                <p>Bachelor of Science in Information Technology</p>
+                <div class="education-icon">🎓</div>
+
+                <div class="education-content">
+                    <span class="education-date">2026 – Present</span>
+                    <h3>University of Eastern Pangasinan</h3>
+                    <p>Bachelor of Science in Information Technology</p>
+                    <p class="education-level">First-Year College</p>
+                </div>
             </div>
 
             <div class="education-card reveal">
-                <span class="education-icon">🏫</span>
-                <h3>Senior High School</h3>
-                <h4>LUMAYAO INTEGRATED SCHOOL</h4>
-                <p><strong>Completed:</strong> 2024–2025</p>
-                <p>Science, Technology, Engineering, and Mathematics (STEM)</p>
+                <div class="education-icon">📚</div>
+
+                <div class="education-content">
+                    <span class="education-date">2024 – 2025</span>
+                    <h3>Lumayao Integrated School</h3>
+                    <p>Senior High School</p>
+                    <p class="education-level">STEM Strand</p>
+                </div>
             </div>
 
             <div class="education-card reveal">
-                <span class="education-icon">🏫</span>
-                <h3>Junior High School</h3>
-                <h4>LUMAYAO INTEGRATED SCHOOL</h4>
-                <p><strong>Completed:</strong> 2020–2024</p>
-                <p>San Quintin, Pangasinan</p>
+                <div class="education-icon">🏫</div>
+
+                <div class="education-content">
+                    <span class="education-date">2020 – 2024</span>
+                    <h3>Lumayao Integrated School</h3>
+                    <p>Junior High School</p>
+                </div>
             </div>
 
             <div class="education-card reveal">
-                <span class="education-icon">📚</span>
-                <h3>Elementary Education</h3>
-                <h4>MANTACDANG ELEMENTARY SCHOOL</h4>
-                <p><strong>Completed:</strong> 2019–2020</p>
-                <p>Sta. Maria, Pangasinan</p>
+                <div class="education-icon">🌷</div>
+
+                <div class="education-content">
+                    <span class="education-date">2019 – 2020</span>
+                    <h3>Mantacdang Elementary School</h3>
+                    <p>Elementary Education</p>
+                </div>
             </div>
+
         </div>
     </section>
 
-    <!-- PROJECTS -->
+    <!-- PROJECTS SECTION -->
     <section id="projects" class="section">
         <div class="section-title reveal">
-            <p>My School Works and Practice 💻</p>
+            <p>MY WORKS AND ACTIVITIES</p>
             <h2>My Projects</h2>
         </div>
 
         <div class="projects-container">
 
             <!-- PROJECT 1 -->
-            <article class="project-card reveal">
-                <div class="project-icon">🌸</div>
-                <p class="project-number">PROJECT 01</p>
+            <div class="project-card reveal">
+                <div class="project-icon">💗</div>
+
                 <h3>Personal Portfolio Website</h3>
+
                 <p>
                     A personal website that introduces me, my skills,
-                    education, interests, and goals as a BSIT student.
-                    It uses HTML to organize the content and CSS to style
-                    the webpage.
+                    education, hobbies, and goals as an IT student.
                 </p>
-                <div class="project-tags">
-                    <span>HTML</span><span>CSS</span><span>Web Design</span>
-                </div>
-                <button class="project-btn" onclick="toggleDetails('project-one', this)">
+
+                <button
+                    type="button"
+                    class="project-btn"
+                    aria-expanded="false"
+                    aria-controls="personal-details"
+                    onclick="toggleProject('personal-details', this)">
                     View Details
                 </button>
-                <div class="project-details" id="project-one">
-                    <p><strong>Purpose:</strong> To practice creating a personal webpage.</p>
-                    <p><strong>Features:</strong> About Me, Skills, Education, Projects, and Contact sections.</p>
+
+                <div class="project-content" id="personal-details" hidden>
+                    <h4>About This Project</h4>
+
+                    <p>
+                        This website presents my personal information,
+                        educational background, skills, and interests.
+                        It also shows my progress in learning web
+                        development.
+                    </p>
+
+                    <p>
+                        <strong>Purpose:</strong> To introduce myself
+                        and showcase my skills as a student.
+                    </p>
+
+                    <p>
+                        <strong>Technologies:</strong> HTML and CSS
+                    </p>
                 </div>
-            </article>
+            </div>
 
             <!-- PROJECT 2 -->
-            <article class="project-card reveal">
+            <div class="project-card reveal">
                 <div class="project-icon">🌐</div>
-                <p class="project-number">PROJECT 02</p>
+
                 <h3>LAN Network Diagram</h3>
+
                 <p>
-                    A diagram showing how computers, a printer, and a server
-                    connect through a network switch in a Local Area Network.
-                    It helps explain how devices communicate within an office.
+                    A network diagram showing how computers and
+                    devices can connect within an office using
+                    a local area network.
                 </p>
-                <div class="project-tags">
-                    <span>Networking</span><span>LAN</span><span>Topology</span>
-                </div>
-                <button class="project-btn" onclick="toggleDetails('project-two', this)">
+
+                <button
+                    type="button"
+                    class="project-btn"
+                    aria-expanded="false"
+                    aria-controls="lan-details"
+                    onclick="toggleProject('lan-details', this)">
                     View Diagram
                 </button>
-                <div class="project-details" id="project-two">
+
+                <div class="project-content" id="lan-details" hidden>
+                    <h4>LAN Network Diagram</h4>
+
                     <div class="lan-diagram">
-                        <div class="lan-device">💻<small>Computer 1</small></div>
-                        <div class="lan-device">🖥️<small>Computer 2</small></div>
-                        <div class="lan-device">🖨️<small>Printer</small></div>
-                        <div class="lan-device">🗄️<small>Server</small></div>
-                        <div class="lan-lines">↘　↓　↓　↙</div>
-                        <div class="lan-switch">🔀 Network Switch</div>
-                        <p class="diagram-caption">
-                            Devices connect to the switch using Ethernet cables.
-                        </p>
+                        <div class="network-device">
+                            <span>🌐</span>
+                            <strong>Internet</strong>
+                        </div>
+
+                        <div class="network-line"></div>
+
+                        <div class="network-device">
+                            <span>📡</span>
+                            <strong>Router</strong>
+                        </div>
+
+                        <div class="network-line"></div>
+
+                        <div class="network-device">
+                            <span>🔀</span>
+                            <strong>Network Switch</strong>
+                        </div>
+
+                        <div class="network-branches">
+                            <div class="network-branch">
+                                <div class="branch-line"></div>
+                                <span>🖥️</span>
+                                <strong>Desktop</strong>
+                            </div>
+
+                            <div class="network-branch">
+                                <div class="branch-line"></div>
+                                <span>💻</span>
+                                <strong>Laptop</strong>
+                            </div>
+
+                            <div class="network-branch">
+                                <div class="branch-line"></div>
+                                <span>🖨️</span>
+                                <strong>Printer</strong>
+                            </div>
+
+                            <div class="network-branch">
+                                <div class="branch-line"></div>
+                                <span>🗄️</span>
+                                <strong>Server</strong>
+                            </div>
+                        </div>
                     </div>
-                    <p><strong>Purpose:</strong> To understand how wired devices connect in a LAN.</p>
+
+                    <p>
+                        <strong>Explanation:</strong> The router
+                        connects the local network to the internet.
+                        The switch connects the desktop, laptop,
+                        printer, and server through network cables.
+                    </p>
+
+                    <p>
+                        <strong>Purpose:</strong> To understand how
+                        devices communicate and share resources
+                        in a LAN.
+                    </p>
                 </div>
-            </article>
+            </div>
 
             <!-- PROJECT 3 -->
-            <article class="project-card reveal">
+            <div class="project-card reveal">
                 <div class="project-icon">🎨</div>
-                <p class="project-number">PROJECT 03</p>
+
                 <h3>HTML and CSS Page</h3>
+
                 <p>
-                    A simple webpage created with HTML elements and CSS
-                    styles. It demonstrates headings, paragraphs, buttons,
-                    colors, spacing, and page layout.
+                    A practice webpage created to apply basic HTML
+                    elements and CSS styles, colors, and layouts.
                 </p>
-                <div class="project-tags">
-                    <span>HTML</span><span>CSS</span><span>Layout</span>
-                </div>
-                <button class="project-btn" onclick="toggleDetails('project-three', this)">
+
+                <button
+                    type="button"
+                    class="project-btn"
+                    aria-expanded="false"
+                    aria-controls="sample-code"
+                    onclick="toggleProject('sample-code', this)">
                     View Sample Code
                 </button>
-                <div class="project-details" id="project-three">
+
+                <div class="project-content" id="sample-code" hidden>
+                    <h4>HTML Sample</h4>
+
                     <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
@@ -245,122 +420,256 @@
 &lt;/head&gt;
 &lt;body&gt;
     &lt;h1&gt;Welcome to My Page&lt;/h1&gt;
-    &lt;p&gt;I am learning HTML and CSS.&lt;/p&gt;
-    &lt;button&gt;Learn More&lt;/button&gt;
+    &lt;p&gt;This is my webpage.&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-                    <p><strong>Purpose:</strong> To practice HTML structure and CSS styling.</p>
+
+                    <h4>CSS Sample</h4>
+
+                    <pre><code>body {
+    background-color: #fff0f7;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #c04485;
+}</code></pre>
+
+                    <p>
+                        HTML creates the structure of the webpage,
+                        while CSS controls its appearance and design.
+                    </p>
                 </div>
-            </article>
+            </div>
 
         </div>
-
-        <p class="project-note">
-            These project descriptions are examples. Replace them with your
-            actual school outputs, screenshots, or files when available.
-        </p>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section contact-section">
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
         <div class="section-title reveal">
-            <p>LET'S CONNECT ✨</p>
+            <p>LET'S CONNECT</p>
             <h2>Contact Me</h2>
         </div>
 
-        <div class="contact-container">
-            <div class="contact-details reveal">
-                <div class="contact-box"><div class="contact-icon">📧</div><div><h3>Email</h3><p>carreonpaulperpus@gmail.com</p></div></div>
-                <div class="contact-box"><div class="contact-icon">📞</div><div><h3>Phone</h3><p>09919322186</p></div></div>
-                <div class="contact-box"><div class="contact-icon">📍</div><div><h3>Location</h3><p>San Quintin, Pangasinan</p></div></div>
+        <div class="contact-container reveal">
+
+            <div class="contact-info">
+                <h3>Get in Touch 💌</h3>
+
+                <p>
+                    Thank you for visiting my portfolio.
+                    You can contact me using the information below.
+                </p>
+
+                <div class="contact-item">
+                    <span class="contact-icon">📧</span>
+                    <div>
+                        <strong>Email</strong>
+                        <a href="mailto:carreonpaulperpus@gmail.com">
+                            carreonpaulperpus@gmail.com
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span class="contact-icon">📱</span>
+                    <div>
+                        <strong>Phone</strong>
+                        <a href="tel:09919322186">09919322186</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span class="contact-icon">📍</span>
+                    <div>
+                        <strong>Location</strong>
+                        <p>San Quintin, Pangasinan</p>
+                    </div>
+                </div>
             </div>
 
-            <form class="contact-form" onsubmit="event.preventDefault(); alert('This is a demo form. Messages are not sent yet.');">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="6" required></textarea>
-                <button type="submit">💌 Send Message</button>
+            <form class="contact-form" id="contact-form">
+                <h3>Send a Message</h3>
+
+                <label for="visitor-name">Your Name</label>
+                <input
+                    type="text"
+                    id="visitor-name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <label for="visitor-email">Your Email</label>
+                <input
+                    type="email"
+                    id="visitor-email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <label for="visitor-message">Your Message</label>
+                <textarea
+                    id="visitor-message"
+                    rows="5"
+                    placeholder="Write your message here..."
+                    required></textarea>
+
+                <button type="submit" class="btn primary-btn">
+                    Prepare Email
+                </button>
+
+                <p class="form-note">
+                    This button opens your email app to prepare a message.
+                </p>
             </form>
+
         </div>
     </section>
 
-    <footer>
-        <p>Made with 💗 by <strong>Mariane Nicole Carreon</strong></p>
-        <p>First-Year BSIT Student | Learning and Growing</p>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <a href="#home" class="footer-logo">Mariane<span>.</span></a>
+
+        <p>
+            Made with ♡ by Mariane Nicole Carreon
+        </p>
+
+        <p class="copyright">
+            © <span id="current-year"></span> My Portfolio.
+            All rights reserved.
+        </p>
     </footer>
 
-    <a href="#home" class="back-top" aria-label="Back to top">↑</a>
-
+    <!-- JAVASCRIPT -->
     <script>
-        // Scroll reveal animation
-        const reveals = document.querySelectorAll(".reveal");
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("active");
-                }
-            });
-        }, { threshold: 0.12 });
-
-        reveals.forEach((element) => observer.observe(element));
-
-        // Typing effect
+        // TYPING EFFECT
+        const typingText = document.getElementById("typing-text");
         const words = [
-            "1st Year BSIT Student",
+            "BSIT Student",
             "Future IT Professional",
-            "Web Development Learner",
-            "Technology Enthusiast"
+            "Web Development Learner"
         ];
 
         let wordIndex = 0;
-        let charIndex = 0;
+        let characterIndex = 0;
         let deleting = false;
-        const typing = document.querySelector(".typing");
 
         function typeEffect() {
             const currentWord = words[wordIndex];
 
             if (!deleting) {
-                typing.textContent = currentWord.substring(0, charIndex + 1);
-                charIndex++;
+                typingText.textContent =
+                    currentWord.substring(0, characterIndex + 1);
 
-                if (charIndex === currentWord.length) {
+                characterIndex++;
+
+                if (characterIndex === currentWord.length) {
                     deleting = true;
-                    setTimeout(typeEffect, 1500);
+                    setTimeout(typeEffect, 1200);
                     return;
                 }
             } else {
-                typing.textContent = currentWord.substring(0, charIndex - 1);
-                charIndex--;
+                typingText.textContent =
+                    currentWord.substring(0, characterIndex - 1);
 
-                if (charIndex === 0) {
+                characterIndex--;
+
+                if (characterIndex === 0) {
                     deleting = false;
                     wordIndex = (wordIndex + 1) % words.length;
                 }
             }
 
-            setTimeout(typeEffect, deleting ? 50 : 100);
+            setTimeout(typeEffect, deleting ? 45 : 90);
         }
 
         typeEffect();
 
-        // Project details buttons
-        function toggleDetails(id, button) {
-            const details = document.getElementById(id);
-            const isOpen = details.classList.toggle("show");
-            button.textContent = isOpen
-                ? "Hide Details"
-                : (id === "project-two" ? "View Diagram" :
-                   id === "project-three" ? "View Sample Code" : "View Details");
+        // SHOW OR HIDE PROJECT DETAILS
+        function toggleProject(id, button) {
+            const content = document.getElementById(id);
+
+            if (!content) return;
+
+            const willOpen = content.hidden;
+
+            content.hidden = !willOpen;
+            button.setAttribute("aria-expanded", String(willOpen));
+
+            if (id === "sample-code") {
+                button.textContent = willOpen
+                    ? "Hide Sample Code"
+                    : "View Sample Code";
+            } else if (id === "lan-details") {
+                button.textContent = willOpen
+                    ? "Hide Diagram"
+                    : "View Diagram";
+            } else {
+                button.textContent = willOpen
+                    ? "Hide Details"
+                    : "View Details";
+            }
         }
 
-        // Navbar scroll effect
-        window.addEventListener("scroll", () => {
-            document.querySelector("header").classList.toggle(
-                "scrolled", window.scrollY > 50
-            );
+        // NAVBAR SCROLL EFFECT
+        const navbar = document.querySelector(".navbar");
+
+        window.addEventListener("scroll", function () {
+            navbar.classList.toggle("scrolled", window.scrollY > 30);
         });
+
+        // REVEAL ELEMENTS ON SCROLL
+        const revealObserver = new IntersectionObserver(
+            function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("active");
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.12 }
+        );
+
+        document.querySelectorAll(".reveal").forEach(function (element) {
+            revealObserver.observe(element);
+        });
+
+        // CONTACT FORM: PREPARE AN EMAIL
+        document.getElementById("contact-form")
+            .addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                const name =
+                    document.getElementById("visitor-name").value.trim();
+
+                const email =
+                    document.getElementById("visitor-email").value.trim();
+
+                const message =
+                    document.getElementById("visitor-message").value.trim();
+
+                const subject = encodeURIComponent(
+                    "Portfolio Contact from " + name
+                );
+
+                const body = encodeURIComponent(
+                    "Name: " + name +
+                    "\nEmail: " + email +
+                    "\n\nMessage:\n" + message
+                );
+
+                window.location.href =
+                    "mailto:carreonpaulperpus@gmail.com" +
+                    "?subject=" + subject +
+                    "&body=" + body;
+            });
+
+        // CURRENT YEAR
+        document.getElementById("current-year").textContent =
+            new Date().getFullYear();
     </script>
 
 </body>

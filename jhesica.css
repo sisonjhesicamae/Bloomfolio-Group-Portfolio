@@ -1042,7 +1042,39 @@ header.scrolled {
         padding: 24px 20px;
     }
 }
+    .view-code-btn {
+    margin-top: 18px;
+    padding: 10px 18px;
+    background: #b8860b;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.3s;
+}
 
+.view-code-btn:hover {
+    background: #8f6808;
+    transform: translateY(-2px);
+}
+
+.project-card pre {
+    margin-top: 18px;
+    padding: 15px;
+    background: #241c2b;
+    color: #f8eaff;
+    border-radius: 10px;
+    overflow-x: auto;
+    text-align: left;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.project-card pre code {
+    font-size: 12px;
+    line-height: 1.7;
+}
 
 /* =========================================
    CONTACT

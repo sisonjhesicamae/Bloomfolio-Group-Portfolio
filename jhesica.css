@@ -727,14 +727,14 @@ header.scrolled {
 }
 
 /* =========================================
-   PROJECTS - ADDED TO MATCH ORIGINAL DESIGN
+   PROJECTS - ALIGNED CARDS
 ========================================= */
 
 .projects-container {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
-    align-items: start;
+    align-items: stretch;
 }
 
 .project-card {
@@ -748,6 +748,11 @@ header.scrolled {
     transition: 0.4s;
     overflow: hidden;
     min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
 }
 
 .project-card::before {
@@ -786,7 +791,7 @@ header.scrolled {
 }
 
 .project-btn {
-    margin-top: 22px;
+    margin-top: auto;
     padding: 13px 22px;
     border: none;
     border-radius: 50px;
@@ -797,6 +802,7 @@ header.scrolled {
     font-weight: bold;
     cursor: pointer;
     transition: 0.4s;
+    flex-shrink: 0;
 }
 
 .project-btn:hover {
